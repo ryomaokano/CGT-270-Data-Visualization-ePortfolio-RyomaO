@@ -1,0 +1,761 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0818.1843                               -->
+<workbook original-version='18.1' source-build='2021.2.2 (20212.21.0818.1843)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='enigma-us.gov_.census.eits_.vip (USConstructionSpending)' inline='true' name='federated.1x2dnn00opzdek155lk7y1agv76k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='USConstructionSpending' name='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/drryo/OneDrive/Documents/CGT270/Labs/USConstructionSpending.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb' name='enigma-us.gov_.census.eits_.vip' table='[&apos;enigma-us#gov_#census#eits_#vip$&apos;]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='per_idx' ordinal='0' />
+            <column datatype='date' name='per_name' ordinal='1' />
+            <column datatype='integer' name='cat_idx' ordinal='2' />
+            <column datatype='string' name='cat_code' ordinal='3' />
+            <column datatype='string' name='cat_desc' ordinal='4' />
+            <column datatype='integer' name='cat_indent' ordinal='5' />
+            <column datatype='integer' name='dt_idx' ordinal='6' />
+            <column datatype='string' name='dt_code' ordinal='7' />
+            <column datatype='string' name='dt_desc' ordinal='8' />
+            <column datatype='string' name='dt_unit' ordinal='9' />
+            <column datatype='integer' name='et_idx' ordinal='10' />
+            <column datatype='string' name='et_code' ordinal='11' />
+            <column datatype='string' name='et_desc' ordinal='12' />
+            <column datatype='string' name='et_unit' ordinal='13' />
+            <column datatype='integer' name='geo_idx' ordinal='14' />
+            <column datatype='string' name='geo_code' ordinal='15' />
+            <column datatype='string' name='geo_desc' ordinal='16' />
+            <column datatype='integer' name='is_adj' ordinal='17' />
+            <column datatype='integer' name='val' ordinal='18' />
+            <column datatype='integer' name='serialid' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb' name='enigma-us.gov_.census.eits_.vip' table='[&apos;enigma-us#gov_#census#eits_#vip$&apos;]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='per_idx' ordinal='0' />
+            <column datatype='date' name='per_name' ordinal='1' />
+            <column datatype='integer' name='cat_idx' ordinal='2' />
+            <column datatype='string' name='cat_code' ordinal='3' />
+            <column datatype='string' name='cat_desc' ordinal='4' />
+            <column datatype='integer' name='cat_indent' ordinal='5' />
+            <column datatype='integer' name='dt_idx' ordinal='6' />
+            <column datatype='string' name='dt_code' ordinal='7' />
+            <column datatype='string' name='dt_desc' ordinal='8' />
+            <column datatype='string' name='dt_unit' ordinal='9' />
+            <column datatype='integer' name='et_idx' ordinal='10' />
+            <column datatype='string' name='et_code' ordinal='11' />
+            <column datatype='string' name='et_desc' ordinal='12' />
+            <column datatype='string' name='et_unit' ordinal='13' />
+            <column datatype='integer' name='geo_idx' ordinal='14' />
+            <column datatype='string' name='geo_code' ordinal='15' />
+            <column datatype='string' name='geo_desc' ordinal='16' />
+            <column datatype='integer' name='is_adj' ordinal='17' />
+            <column datatype='integer' name='val' ordinal='18' />
+            <column datatype='integer' name='serialid' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>per_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[per_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>per_idx</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>per_name</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[per_name]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>per_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cat_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_idx</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cat_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cat_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_desc</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_indent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cat_indent]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_indent</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dt_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_idx</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dt_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_code</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dt_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_desc</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_unit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dt_unit]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_unit</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[et_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_idx</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[et_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[et_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_desc</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_unit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[et_unit]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_unit</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[geo_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>geo_idx</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[geo_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>geo_code</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[geo_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>geo_desc</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_adj</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_adj]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>is_adj</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>val</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[val]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>val</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>serialid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[serialid]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>serialid</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='enigma-us.gov_.census.eits_.vip' datatype='table' name='[__tableau_internal_object_id__].[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]' role='measure' type='quantitative' />
+      <column caption='Cat Code' datatype='string' name='[cat_code]' role='dimension' type='nominal' />
+      <column caption='Construction Category' datatype='string' name='[cat_desc]' role='dimension' type='nominal' />
+      <column caption='Cat Idx' datatype='integer' name='[cat_idx]' role='measure' type='quantitative' />
+      <column caption='Cat Indent' datatype='integer' name='[cat_indent]' role='measure' type='quantitative' />
+      <column caption='Dt Code' datatype='string' name='[dt_code]' role='dimension' type='nominal' />
+      <column caption='Dt Desc' datatype='string' name='[dt_desc]' role='dimension' type='nominal' />
+      <column caption='Dt Idx' datatype='integer' name='[dt_idx]' role='measure' type='quantitative' />
+      <column caption='Dt Unit' datatype='string' name='[dt_unit]' role='dimension' type='nominal' />
+      <column caption='Et Code' datatype='string' name='[et_code]' role='dimension' type='nominal' />
+      <column caption='Et Desc' datatype='string' name='[et_desc]' role='dimension' type='nominal' />
+      <column caption='Et Idx' datatype='integer' name='[et_idx]' role='measure' type='quantitative' />
+      <column caption='Et Unit' datatype='string' name='[et_unit]' role='dimension' type='nominal' />
+      <column caption='Geo Code' datatype='string' name='[geo_code]' role='dimension' type='nominal' />
+      <column caption='Geo Desc' datatype='string' name='[geo_desc]' role='dimension' type='nominal' />
+      <column caption='Geo Idx' datatype='integer' name='[geo_idx]' role='measure' type='quantitative' />
+      <column caption='Is Adj' datatype='integer' name='[is_adj]' role='measure' type='quantitative' />
+      <column caption='Per Idx' datatype='integer' name='[per_idx]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[per_name]' role='dimension' type='ordinal' />
+      <column caption='Serialid' datatype='integer' name='[serialid]' role='measure' type='quantitative' />
+      <column caption='Dollars Spent' datatype='integer' name='[val]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='enigma-us.gov_.census.eits_.vip' id='enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26'>
+            <properties context=''>
+              <relation connection='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb' name='enigma-us.gov_.census.eits_.vip' table='[&apos;enigma-us#gov_#census#eits_#vip$&apos;]' type='table'>
+                <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='per_idx' ordinal='0' />
+                  <column datatype='date' name='per_name' ordinal='1' />
+                  <column datatype='integer' name='cat_idx' ordinal='2' />
+                  <column datatype='string' name='cat_code' ordinal='3' />
+                  <column datatype='string' name='cat_desc' ordinal='4' />
+                  <column datatype='integer' name='cat_indent' ordinal='5' />
+                  <column datatype='integer' name='dt_idx' ordinal='6' />
+                  <column datatype='string' name='dt_code' ordinal='7' />
+                  <column datatype='string' name='dt_desc' ordinal='8' />
+                  <column datatype='string' name='dt_unit' ordinal='9' />
+                  <column datatype='integer' name='et_idx' ordinal='10' />
+                  <column datatype='string' name='et_code' ordinal='11' />
+                  <column datatype='string' name='et_desc' ordinal='12' />
+                  <column datatype='string' name='et_unit' ordinal='13' />
+                  <column datatype='integer' name='geo_idx' ordinal='14' />
+                  <column datatype='string' name='geo_code' ordinal='15' />
+                  <column datatype='string' name='geo_desc' ordinal='16' />
+                  <column datatype='integer' name='is_adj' ordinal='17' />
+                  <column datatype='integer' name='val' ordinal='18' />
+                  <column datatype='integer' name='serialid' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>U.S. Construction Spending from 2002 to 2016</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='enigma-us.gov_.census.eits_.vip (USConstructionSpending)' name='federated.1x2dnn00opzdek155lk7y1agv76k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x2dnn00opzdek155lk7y1agv76k'>
+            <column caption='Date' datatype='date' name='[per_name]' role='dimension' type='ordinal' />
+            <column-instance column='[val]' derivation='Sum' name='[sum:val:qk]' pivot='key' type='quantitative' />
+            <column caption='Dollars Spent' datatype='integer' name='[val]' role='measure' type='quantitative' />
+            <column-instance column='[per_name]' derivation='Year' name='[yr:per_name:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</rows>
+        <cols>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>76551990</value>
+                <value>2007</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>75153021</value>
+                <value>2015</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>54828133</value>
+                <value>2011</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{A55D527C-B98B-4EAA-ACFD-6B4B132BEA86}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]</field>
+                  <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>54828133</value>
+                <value>2011</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D0B78C09-966D-4ABF-A1FD-8493B9A83634}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RfO6TgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

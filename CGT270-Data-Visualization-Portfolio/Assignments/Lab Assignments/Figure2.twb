@@ -1,0 +1,945 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0818.1843                               -->
+<workbook original-version='18.1' source-build='2021.2.2 (20212.21.0818.1843)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='enigma-us.gov_.census.eits_.vip (USConstructionSpending)' inline='true' name='federated.1x2dnn00opzdek155lk7y1agv76k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='USConstructionSpending' name='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/drryo/OneDrive/Documents/CGT270/Labs/USConstructionSpending.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb' name='enigma-us.gov_.census.eits_.vip' table='[&apos;enigma-us#gov_#census#eits_#vip$&apos;]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='per_idx' ordinal='0' />
+            <column datatype='date' name='per_name' ordinal='1' />
+            <column datatype='integer' name='cat_idx' ordinal='2' />
+            <column datatype='string' name='cat_code' ordinal='3' />
+            <column datatype='string' name='cat_desc' ordinal='4' />
+            <column datatype='integer' name='cat_indent' ordinal='5' />
+            <column datatype='integer' name='dt_idx' ordinal='6' />
+            <column datatype='string' name='dt_code' ordinal='7' />
+            <column datatype='string' name='dt_desc' ordinal='8' />
+            <column datatype='string' name='dt_unit' ordinal='9' />
+            <column datatype='integer' name='et_idx' ordinal='10' />
+            <column datatype='string' name='et_code' ordinal='11' />
+            <column datatype='string' name='et_desc' ordinal='12' />
+            <column datatype='string' name='et_unit' ordinal='13' />
+            <column datatype='integer' name='geo_idx' ordinal='14' />
+            <column datatype='string' name='geo_code' ordinal='15' />
+            <column datatype='string' name='geo_desc' ordinal='16' />
+            <column datatype='integer' name='is_adj' ordinal='17' />
+            <column datatype='integer' name='val' ordinal='18' />
+            <column datatype='integer' name='serialid' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb' name='enigma-us.gov_.census.eits_.vip' table='[&apos;enigma-us#gov_#census#eits_#vip$&apos;]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='per_idx' ordinal='0' />
+            <column datatype='date' name='per_name' ordinal='1' />
+            <column datatype='integer' name='cat_idx' ordinal='2' />
+            <column datatype='string' name='cat_code' ordinal='3' />
+            <column datatype='string' name='cat_desc' ordinal='4' />
+            <column datatype='integer' name='cat_indent' ordinal='5' />
+            <column datatype='integer' name='dt_idx' ordinal='6' />
+            <column datatype='string' name='dt_code' ordinal='7' />
+            <column datatype='string' name='dt_desc' ordinal='8' />
+            <column datatype='string' name='dt_unit' ordinal='9' />
+            <column datatype='integer' name='et_idx' ordinal='10' />
+            <column datatype='string' name='et_code' ordinal='11' />
+            <column datatype='string' name='et_desc' ordinal='12' />
+            <column datatype='string' name='et_unit' ordinal='13' />
+            <column datatype='integer' name='geo_idx' ordinal='14' />
+            <column datatype='string' name='geo_code' ordinal='15' />
+            <column datatype='string' name='geo_desc' ordinal='16' />
+            <column datatype='integer' name='is_adj' ordinal='17' />
+            <column datatype='integer' name='val' ordinal='18' />
+            <column datatype='integer' name='serialid' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>per_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[per_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>per_idx</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>per_name</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[per_name]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>per_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cat_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_idx</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cat_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cat_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_desc</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cat_indent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cat_indent]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>cat_indent</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dt_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_idx</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dt_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_code</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dt_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_desc</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt_unit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[dt_unit]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>dt_unit</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[et_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_idx</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[et_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[et_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_desc</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>et_unit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[et_unit]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>et_unit</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_idx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[geo_idx]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>geo_idx</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[geo_code]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>geo_code</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geo_desc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[geo_desc]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>geo_desc</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_adj</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_adj]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>is_adj</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>val</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[val]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>val</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>serialid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[serialid]</local-name>
+            <parent-name>[enigma-us.gov_.census.eits_.vip]</parent-name>
+            <remote-alias>serialid</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='enigma-us.gov_.census.eits_.vip' datatype='table' name='[__tableau_internal_object_id__].[enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26]' role='measure' type='quantitative' />
+      <column caption='Cat Code' datatype='string' name='[cat_code]' role='dimension' type='nominal' />
+      <column caption='Construction Category' datatype='string' name='[cat_desc]' role='dimension' type='nominal' />
+      <column caption='Cat Idx' datatype='integer' name='[cat_idx]' role='measure' type='quantitative' />
+      <column caption='Cat Indent' datatype='integer' name='[cat_indent]' role='measure' type='quantitative' />
+      <column caption='Dt Code' datatype='string' name='[dt_code]' role='dimension' type='nominal' />
+      <column caption='Dt Desc' datatype='string' name='[dt_desc]' role='dimension' type='nominal' />
+      <column caption='Dt Idx' datatype='integer' name='[dt_idx]' role='measure' type='quantitative' />
+      <column caption='Dt Unit' datatype='string' name='[dt_unit]' role='dimension' type='nominal' />
+      <column caption='Et Code' datatype='string' name='[et_code]' role='dimension' type='nominal' />
+      <column caption='Et Desc' datatype='string' name='[et_desc]' role='dimension' type='nominal' />
+      <column caption='Et Idx' datatype='integer' name='[et_idx]' role='measure' type='quantitative' />
+      <column caption='Et Unit' datatype='string' name='[et_unit]' role='dimension' type='nominal' />
+      <column caption='Geo Code' datatype='string' name='[geo_code]' role='dimension' type='nominal' />
+      <column caption='Geo Desc' datatype='string' name='[geo_desc]' role='dimension' type='nominal' />
+      <column caption='Geo Idx' datatype='integer' name='[geo_idx]' role='measure' type='quantitative' />
+      <column caption='Is Adj' datatype='integer' name='[is_adj]' role='measure' type='quantitative' />
+      <column caption='Per Idx' datatype='integer' name='[per_idx]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[per_name]' role='dimension' type='ordinal' />
+      <column caption='Serialid' datatype='integer' name='[serialid]' role='measure' type='quantitative' />
+      <column caption='Dollars Spent' datatype='integer' name='[val]' role='measure' type='quantitative' />
+      <column-instance column='[cat_desc]' derivation='None' name='[none:cat_desc:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:cat_desc:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Annual Rate for Lodging&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nonresidential&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Amusement and Recreation&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Commercial&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Annual Rate for Conservation and Development&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Health Care&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Annual Rate for Power&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Religious&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Annual Rate for Manufacturing&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Office&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Annual Rate for Educational&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Highway and Street&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Annual Rate for Transportation&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Annual Rate for Amusement and Recreation&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Communication&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Annual Rate for Sewage and Waste Disposal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Transportation&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Annual Rate for Health Care&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lodging&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Annual Rate for Public Safety&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Residential&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Annual Rate for Religious&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sewage and Waste Disposal&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Annual Rate for Total Construction&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Water Supply&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Annual Rate for Water Supply&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Annual Rate for Nonresidential&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Power&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Annual Rate for Highway and Street&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Manufacturing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Annual Rate for Commercial&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Conservation and Development&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Annual Rate for Residential&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Total Construction&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Annual Rate for Office&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Public Safety&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Annual Rate for Communication&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Educational&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='enigma-us.gov_.census.eits_.vip' id='enigma-us.gov!.census.eits!.vip_E65F4713D39E4E0982A86EC33660ED26'>
+            <properties context=''>
+              <relation connection='excel-direct.0uzts1a0myxhba1h0s6fr1a7m5cb' name='enigma-us.gov_.census.eits_.vip' table='[&apos;enigma-us#gov_#census#eits_#vip$&apos;]' type='table'>
+                <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='per_idx' ordinal='0' />
+                  <column datatype='date' name='per_name' ordinal='1' />
+                  <column datatype='integer' name='cat_idx' ordinal='2' />
+                  <column datatype='string' name='cat_code' ordinal='3' />
+                  <column datatype='string' name='cat_desc' ordinal='4' />
+                  <column datatype='integer' name='cat_indent' ordinal='5' />
+                  <column datatype='integer' name='dt_idx' ordinal='6' />
+                  <column datatype='string' name='dt_code' ordinal='7' />
+                  <column datatype='string' name='dt_desc' ordinal='8' />
+                  <column datatype='string' name='dt_unit' ordinal='9' />
+                  <column datatype='integer' name='et_idx' ordinal='10' />
+                  <column datatype='string' name='et_code' ordinal='11' />
+                  <column datatype='string' name='et_desc' ordinal='12' />
+                  <column datatype='string' name='et_unit' ordinal='13' />
+                  <column datatype='integer' name='geo_idx' ordinal='14' />
+                  <column datatype='string' name='geo_code' ordinal='15' />
+                  <column datatype='string' name='geo_desc' ordinal='16' />
+                  <column datatype='integer' name='is_adj' ordinal='17' />
+                  <column datatype='integer' name='val' ordinal='18' />
+                  <column datatype='integer' name='serialid' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>U.S. Construction Spending by Construction Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='enigma-us.gov_.census.eits_.vip (USConstructionSpending)' name='federated.1x2dnn00opzdek155lk7y1agv76k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x2dnn00opzdek155lk7y1agv76k'>
+            <column caption='Construction Category' datatype='string' name='[cat_desc]' role='dimension' type='nominal' />
+            <column-instance column='[cat_desc]' derivation='None' name='[none:cat_desc:nk]' pivot='key' type='nominal' />
+            <column caption='Date' datatype='date' name='[per_name]' role='dimension' type='ordinal' />
+            <column-instance column='[val]' derivation='Sum' name='[sum:val:qk]' pivot='key' type='quantitative' />
+            <column caption='Dollars Spent' datatype='integer' name='[val]' role='measure' type='quantitative' />
+            <column-instance column='[per_name]' derivation='Year' name='[yr:per_name:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1x2dnn00opzdek155lk7y1agv76k].[none:cat_desc:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Amusement and Recreation&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Commercial&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Communication&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Conservation and Development&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Educational&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Health Care&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Highway and Street&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Lodging&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Manufacturing&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Office&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Power&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Public Safety&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Religious&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Residential&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Sewage and Waste Disposal&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Transportation&quot;' />
+              <groupfilter function='member' level='[none:cat_desc:nk]' member='&quot;Water Supply&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1x2dnn00opzdek155lk7y1agv76k].[none:cat_desc:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]' palette='orange_blue_white_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]' />
+              <size column='[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x2dnn00opzdek155lk7y1agv76k].[none:cat_desc:nk]</rows>
+        <cols>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</cols>
+      </table>
+      <simple-id uuid='{A55D527C-B98B-4EAA-ACFD-6B4B132BEA86}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1x2dnn00opzdek155lk7y1agv76k].[sum:val:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[none:cat_desc:nk]</field>
+            <field>[federated.1x2dnn00opzdek155lk7y1agv76k].[yr:per_name:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D0B78C09-966D-4ABF-A1FD-8493B9A83634}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
